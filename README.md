@@ -7,7 +7,7 @@ Apply the Circular to the Pretraining Model
 
 | 预训练模型            | 学习率 | batchsize | 设备   | 语料库 | 时间 | 优化器 |
 | --------------------- | ------ | --------- | ------ | ------ | ---- | ------ |
-| CirBERTa-Chinese-Base | 1e-5   | 256      | 10*3090+3*A100 | 200G   | 2月 | AdamW  |
+| CirBERTa-Chinese-Base | 1e-5   | 256      | 10张3090+3张A100 | 200G   | 2月 | AdamW  |
 
 在多项中文理解任务上，12层CirBERTa-Base模型超过24层MacBERT-Chinese-Large/RoBERTa-Chinese-Large
 
@@ -21,7 +21,7 @@ Apply the Circular to the Pretraining Model
 from transformers import AutoTokenizer,AutoModel
 
 tokenizer = AutoTokenizer.from_pretrained("WENGSYX/CirBERTa-Chinese-Base")
-model = AutoModel.from_pretrained("WENGSYX/CirBERTa-Chinese-Basee")
+model = AutoModel.from_pretrained("WENGSYX/CirBERTa-Chinese-Base")
 ```
 
 
