@@ -9,7 +9,7 @@ Apply the Circular to the Pretraining Model
 | --------------------- | ------ | --------- | ------ | ------ | ---- | ------ |
 | CirBERTa-Chinese-Base | 1e-5   | 256      | 10*3090+3*A100 | 200G   | 2月 | AdamW  |
 
-在多项任务上，CirBERTa-Base模型超过MacBERT-Chinese-Large/RoBERTa-Chinese-Large(例如CBLUE排行榜第一等）
+在多项中文任务上，CirBERTa-Base模型超过MacBERT-Chinese-Large/RoBERTa-Chinese-Large
 
 <center><img src="img/2.png" alt="img" style="zoom:50%;" /></center>
 
