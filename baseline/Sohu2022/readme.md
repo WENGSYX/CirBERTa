@@ -1,12 +1,10 @@
 # CirBERTa - 搜狐情感分类baseline   (求star)
 
-## Baseline实现
+## 实现
 
 ##### 基于pytorch，使用CirBERTa-Chinese预训练模型并基于prompt实现模型分类。
 
 ##### 仅包含NLP赛道内容，单模型无trick, 线上0.6996 
-
-#####   
 
 
 
