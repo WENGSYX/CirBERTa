@@ -1,4 +1,4 @@
-# CirBERTa - 搜狐情感分类baseline   (求star)
+# CirBERTa - 搜狐情感分类baseline
 
 
 ## 实现
