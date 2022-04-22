@@ -1,0 +1,15 @@
+nltk
+spacy
+numpy
+pytest
+regex
+scipy
+sklearn
+tqdm
+ujson
+seqeval
+psutil
+sentencepiece
+#GitPython
+torch
+#torchvision
