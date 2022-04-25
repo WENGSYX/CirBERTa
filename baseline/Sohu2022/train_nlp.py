@@ -65,9 +65,9 @@ except:
     random.shuffle(datas)
     pd.to_pickle(datas[:3000],'valid_nlp.pk')
     pd.to_pickle(datas[3000:],'train_nlp.pk')
+    train = pd.read_pickle('train_nlp.pk')
+    valid = pd.read_pickle('valid_nlp.pk')
 
-
-datas = pd.read_csv('Sohu2022_data/rec_data/train-dataset.csv')
 
 label_name = {}
 num = 0
@@ -660,7 +660,7 @@ valid_set = MyDataset(valid)
 
 train_loader = DataLoader(train_set, batch_size=CFG['train_bs'], collate_fn=collate_fn, shuffle=True,
                           num_workers=CFG['num_workers'])
-valid_loader = DataLoader(valid_set, batch_size=CFG['valid_bs'], collate_fn=collate_fn, shuffle=False,
+valid_loader = DataLoader(valid_set, batch_size=CFG['valid_bs'], collate_fn=collate_fn_test, shuffle=False,
                           num_workers=CFG['num_workers'])
 
 best_acc = 0
